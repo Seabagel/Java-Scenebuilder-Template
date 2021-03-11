@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #eaeaea;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label text="Source Path">
+         <VBox.margin>
+            <Insets bottom="8.0" left="32.0" right="32.0" top="24.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <TextArea promptText="Source Path" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets left="32.0" right="32.0" />
+         </VBox.margin>
+      </TextArea>
+      <Label text="Destination Path">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="8.0" left="32.0" right="32.0" top="16.0" />
+         </VBox.margin>
+      </Label>
+      <TextArea promptText="Destination Path" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets left="32.0" right="32.0" />
+         </VBox.margin>
+      </TextArea>
+      <CheckBox mnemonicParsing="false" text="Text Replacement">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="8.0" left="32.0" right="32.0" top="16.0" />
+         </VBox.margin>
+      </CheckBox>
+      <TextArea promptText="OriginalText,ReplacementText;" wrapText="true" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets left="32.0" right="32.0" />
+         </VBox.margin>
+      </TextArea>
+      <HBox>
+         <children>
+            <CheckBox mnemonicParsing="false" text="No Dash (&quot;-&quot;)">
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </CheckBox>
+            <TextField promptText="Header - " HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="8.0" left="32.0" right="32.0" top="16.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox>
+         <children>
+            <CheckBox mnemonicParsing="false" text="No Dash (&quot;-&quot;)">
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </CheckBox>
+            <TextField promptText=" - Footer" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets left="32.0" right="32.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" style="-fx-background-color: #3498db;" text="Copy Files" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Italic" size="18.0" />
+               </font>
+            </Button>
+            <ProgressIndicator progress="1.0">
+               <HBox.margin>
+                  <Insets left="8.0" />
+               </HBox.margin>
+            </ProgressIndicator>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="40.0" left="32.0" right="32.0" top="32.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
